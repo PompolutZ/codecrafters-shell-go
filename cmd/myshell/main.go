@@ -20,5 +20,5 @@ func main() {
 
 	command := strings.Trim(reader, "\r\n");
 
-	fmt.Printf("%s: command not found\r\n", command);
+	fmt.Printf("%s: command not found\n", command);
 }
