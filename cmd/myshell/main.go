@@ -16,13 +16,13 @@ func main() {
 
 func readCommand() string {
 	fmt.Fprint(os.Stdout, "$ ")
-	reader, err := bufio.NewReader(os.Stdin).ReadString('\n')
+	cmd, err := bufio.NewReader(os.Stdin).ReadString('\n')
 	if err != nil {
 		fmt.Println("Error reading input:", err)
 		os.Exit(0)
 	}
 
-	return strings.Trim(reader, "\n");	
+	return strings.TrimSpace(cmd);	
 }
 
 func executeCommand(command string) {
