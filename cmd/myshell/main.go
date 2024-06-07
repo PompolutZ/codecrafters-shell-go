@@ -26,5 +26,9 @@ func readCommand() string {
 }
 
 func executeCommand(command string) {
-	fmt.Printf("%s: command not found\n", command);
+	if strings.HasPrefix(command, "exit") {
+		os.Exit(0);
+	} else {
+		fmt.Printf("%s: command not found\n", command);
+	}
 }	
