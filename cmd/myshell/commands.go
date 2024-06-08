@@ -39,7 +39,6 @@ func setup() Commands {
 		}
 			
 		fmt.Printf("%s: command not found", cmd)
-		fmt.Println()
 	})
 	return commands
 }
