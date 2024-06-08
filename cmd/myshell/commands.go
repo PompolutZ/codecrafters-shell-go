@@ -38,7 +38,7 @@ func setup() Commands {
 			}
 		}
 			
-		fmt.Printf("%s: command not found", cmd)
+		fmt.Printf("%s: command not found\n", cmd)
 	})
 	return commands
 }
